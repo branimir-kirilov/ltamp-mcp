@@ -1,0 +1,34 @@
+{
+  "name": "ltamp-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that lets AI assistants audition, edit and save tones on Fender Mustang LT amps",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "ltamp-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "start": "tsx src/index.ts",
+    "smoke": "tsx scripts/smoke.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "ltamp-js": "github:branimir-kirilov/ltamp-js",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  }
+}
