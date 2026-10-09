@@ -2,9 +2,8 @@
 // period, so other apps (like Fender Tone) can use the amp in between calls.
 
 import { LtAmp, NodeHidTransport } from "ltamp-js/node";
-import { buildCatalog, type Catalog } from "./catalog.js";
+import { buildCatalog, parsePreset, type Catalog } from "ltamp-js";
 import { writeSnapshot } from "./history.js";
-import { parsePreset } from "./tone.js";
 
 export const SLOT_COUNT = 60;
 

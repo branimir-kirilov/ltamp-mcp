@@ -14,7 +14,7 @@ import {
   toTone,
   ToneError,
   type Tone,
-} from "./tone.js";
+} from "ltamp-js";
 
 const INSTRUCTIONS = `Controls a Fender Mustang LT guitar amp connected over USB.
 
